@@ -1,7 +1,7 @@
-function Book(title, author,noPages) {
+function Book(title, author,page) {
     this.title = title;
     this.author = author;
-    this.pages = Page;
+    this.page = page;
     this.readOrNot = function (){
         if(this.title= read){
             console.log('read the book')
@@ -11,7 +11,10 @@ function Book(title, author,noPages) {
     }
 }
 
-Book.prototype.description= function(){
+Book.prototype.info= function(){
     return `${this.title} by ${this.author} is ${this.page} long`
 }
-var book = new Book('Think big','william Shakespeare',84)
+var book = new Book('johnySun','Jonathan Sun',84)
+
+console.log(Book)
+book.info()
